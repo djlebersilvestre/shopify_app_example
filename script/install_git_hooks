@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# This script install the git pre-commit hooks to project folder.
+
+if ! [ -d .git -a -d script ]; then
+  echo "Error: please run this script under project root directory".
+  exit 0
+fi
+
+if [ ! -d .git/hooks/pre-commit.d ] ; then
+  echo "Symlink .git/hooks/pre-commit.d to ../../script/git-hooks/pre-commit.d"
+
+  ln -s ../../script/git-hooks/pre-commit.d .git/hooks/pre-commit.d
+fi
+
+if [ -f .git/hooks/pre-commit -a ! -L .git/hooks/pre-commit ] ; then
+  echo "Moving old pre-commit script to script/git-hooks/pre-commit.d/"
+
+  mv .git/hooks/pre-commit script/git-hooks/pre-commit.d/
+fi
+
+if [ ! -f .git/hooks/pre-commit ] ; then
+  echo "Symlink .git/hooks/pre-commit ../../script/git-hooks/shared-hook"
+
+  ln -s ../../script/git-hooks/shared-hook .git/hooks/pre-commit
+fi
+
+echo "Succeed!"

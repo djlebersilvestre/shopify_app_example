@@ -1,0 +1,17 @@
+#!/bin/sh
+
+export HOOK_TYPE=`basename $0`
+
+if [ -d ${0}.d ]; then
+  for i in ${0}.d/*; do
+    export HOOK_NAME=`basename $i | sed "s/\./-/g"`
+
+    if [ -x ${i} ]; then
+      ${i}
+      RETVAL=$?
+      [ $RETVAL -ne 0 ] && exit $RETVAL
+    fi
+  done
+fi
+
+exit 0

@@ -1,0 +1,18 @@
+Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 100
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+AllCops:
+  Exclude:
+    - 'script/**/*'
+    - 'config/**/*'
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'test/test_helper.rb'
+    - 'Guardfile'
+
