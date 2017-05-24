@@ -152,6 +152,12 @@
         null,
         null
       ],
+      "/Users/daniel.silvestre/src/personal/shopify_app_example/app/models/shop.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/daniel.silvestre/src/personal/shopify_app_example/app/models/foo_dependant.rb": [
         1,
         1,
@@ -285,6 +291,6 @@
         null
       ]
     },
-    "timestamp": 1495637468
+    "timestamp": 1495639452
   }
 }

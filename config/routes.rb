@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => 'home#index'
+  root to: 'home#index'
   mount ShopifyApp::Engine, at: '/'
 
   resources :foos, except: %i(new edit), defaults: { format: :json } do

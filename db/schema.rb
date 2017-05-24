@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170220153431) do
+ActiveRecord::Schema.define(version: 20170524151645) do
 
   create_table "foo_dependants", force: :cascade do |t|
     t.integer  "foo_id",     null: false
@@ -27,6 +27,14 @@ ActiveRecord::Schema.define(version: 20170220153431) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_foos_on_name", unique: true
+  end
+
+  create_table "shops", force: :cascade do |t|
+    t.string   "shopify_domain", null: false
+    t.string   "shopify_token",  null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["shopify_domain"], name: "index_shops_on_shopify_domain", unique: true
   end
 
 end
