@@ -1,21 +1,18 @@
 #!/bin/bash
 
-# TODO: find a way to rename the project to a new name chosen by the user
-
 command_exists() {
   command -v "$1" >/dev/null 2>&1; 
 }
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+[[ -s "/opt/dev/sh/chruby/chruby.sh" ]] && source "/opt/dev/sh/chruby/chruby.sh"
 
-if ! command_exists rvm; then
-  echo "RVM is required to proceed with the setup script."
-  echo "Please check https://rvm.io/rvm/install for installation instructions."
+if ! command_exists chruby; then
+  echo "chruby is required to proceed with the setup script."
   echo "Aborting..."
   exit 1
 fi
 
-rvm use `cat .ruby-version`@`cat .ruby-gemset` --create || { echo "rvm use failed. Aborting..."; exit 1; }
+chruby `cat .ruby-version` || { echo "chruby failed. Aborting..."; exit 1; }
 
 if ! command_exists bundler; then
   gem install bundler || { echo "gem install bundler failed. Aborting..."; exit 1; }
