@@ -16,7 +16,7 @@ gem 'shopify_app', '~> 7.2.8'
 gem 'sqlite3'
 gem 'therubyracer', platforms: :ruby
 gem 'turbolinks', '~> 5'
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'tzinfo-data', platforms: %i(mingw mswin x64_mingw jruby)
 gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
