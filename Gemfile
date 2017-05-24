@@ -12,9 +12,11 @@ gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.0.1'
 gem 'redis', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
+gem 'shopify_app', '~> 7.2.8'
 gem 'sqlite3'
 gem 'therubyracer', platforms: :ruby
 gem 'turbolinks', '~> 5'
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
@@ -39,5 +41,3 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0'
   gem 'web-console', '>= 3.3'
 end
-
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
