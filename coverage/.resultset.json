@@ -158,14 +158,11 @@
         1,
         null
       ],
-      "/Users/daniel.silvestre/src/personal/shopify_app_example/app/models/foo_dependant.rb": [
+      "/Users/daniel.silvestre/src/personal/shopify_app_example/app/models/foo.rb": [
         1,
         1,
         null,
         1,
-        1,
-        1,
-        null,
         null
       ],
       "/Users/daniel.silvestre/src/personal/shopify_app_example/app/models/application_record.rb": [
@@ -174,14 +171,7 @@
         1,
         null
       ],
-      "/Users/daniel.silvestre/src/personal/shopify_app_example/app/models/foo.rb": [
-        1,
-        1,
-        null,
-        1,
-        null
-      ],
-      "/Users/daniel.silvestre/src/personal/shopify_app_example/app/controllers/foo_dependants_controller.rb": [
+      "/Users/daniel.silvestre/src/personal/shopify_app_example/app/controllers/foos_controller.rb": [
         1,
         1,
         2,
@@ -283,7 +273,17 @@
         1,
         null
       ],
-      "/Users/daniel.silvestre/src/personal/shopify_app_example/app/controllers/foos_controller.rb": [
+      "/Users/daniel.silvestre/src/personal/shopify_app_example/app/models/foo_dependant.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/daniel.silvestre/src/personal/shopify_app_example/app/controllers/foo_dependants_controller.rb": [
         1,
         1,
         2,
@@ -291,6 +291,6 @@
         null
       ]
     },
-    "timestamp": 1495639452
+    "timestamp": 1495653840
   }
 }
