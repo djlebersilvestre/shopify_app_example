@@ -175,7 +175,7 @@
         1,
         null
       ],
-      "/Users/daniel.silvestre/src/personal/shopify_app_example/app/controllers/foos_controller.rb": [
+      "/Users/daniel.silvestre/src/personal/shopify_app_example/app/controllers/foo_dependants_controller.rb": [
         1,
         1,
         2,
@@ -277,7 +277,7 @@
         1,
         null
       ],
-      "/Users/daniel.silvestre/src/personal/shopify_app_example/app/controllers/foo_dependants_controller.rb": [
+      "/Users/daniel.silvestre/src/personal/shopify_app_example/app/controllers/foos_controller.rb": [
         1,
         1,
         2,
@@ -285,6 +285,6 @@
         null
       ]
     },
-    "timestamp": 1495637430
+    "timestamp": 1495637468
   }
 }
