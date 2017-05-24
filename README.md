@@ -16,3 +16,5 @@ This should take care of all dependencies for you ;)
 * I like the docs so far. It seems pretty straightforward using RoR
 * The idea of having a Rails skeleton app is great and speedup the entire process
 * Aside the Heroku example, we could have a standalone example using your localhost
+* In https://github.com/shopify/shopify_app , we have this instruction _To create a development application set the Application Callback URL to_ however, inside partners dashboard the field is named _App URL_
+* In https://github.com/shopify/shopify_app , we have this instruction _and the redirect uri to_ however, inside partners dashboard the field is named _Whitelisted redirection URL(s)_
